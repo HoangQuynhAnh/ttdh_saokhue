@@ -35,12 +35,9 @@
               <div>
                   <h3 class="text-xl font-bold mb-4">Khóa học</h3>
                   <ul class="space-y-2">
-                      <li><a href="#" class="text-gray-400 hover:text-white">Toán học nâng cao</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white">Tiếng Anh giao tiếp</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white">Vật lý cơ bản và nâng cao</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white">Hóa học</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white">Ngữ văn</a></li>
-                      <li><a href="#" class="text-gray-400 hover:text-white">Luyện thi đại học</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white">Luyện thi THPT Quốc gia</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white">Bồi dưỡng, bổ trợ kiến thức THPT</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white">Bổ trợ kiến thức THCS</a></li>
                   </ul>
               </div>
               

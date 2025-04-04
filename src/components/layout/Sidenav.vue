@@ -28,7 +28,7 @@
         <div v-show="mobileMenuOpen" class="md:hidden pb-4">
           <router-link to="trang-chu" class="block py-2 text-primary-700 font-medium">Trang chủ</router-link>
           <router-link to="/giao-vien" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Giáo viên</router-link>
-          <router-link to="/hoc-sinh" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Giáo viên</router-link>
+          <router-link to="/hoc-sinh" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Học sinh</router-link>
           <router-link to="/lich-hoc" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Lịch học</router-link>
           <router-link to="/tuyen-sinh" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Tuyển sinh</router-link>
           <router-link to="/lien-he" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Liên hệ</router-link>

@@ -125,15 +125,15 @@
             <!-- Course 2 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
                 <div class="h-48 overflow-hidden">
-                    <img src="./../assets/class.jpg" alt="Tiếng Anh giao tiếp" class="w-full h-full object-cover">
+                    <img src="./../assets/class.jpg" alt="Bồi dưỡng, bổ trợ kiến thức THPT" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6">
                     <div class="flex justify-between items-center mb-3">
-                        <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Mọi lứa tuổi</span>
+                        <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Lớp 10-11-12</span>
                         <span class="text-secondary-400"><i class="fas fa-star mr-1"></i>4.8/5</span>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-700 mb-2">Tiếng Anh giao tiếp</h3>
-                    <p class="text-gray-600 mb-4">Khóa học giúp học viên phát triển kỹ năng giao tiếp tiếng Anh tự tin với người bản xứ trong mọi tình huống.</p>
+                    <h3 class="text-xl font-bold text-primary-700 mb-2">Bồi dưỡng, bổ trợ kiến thức THPT</h3>
+                    <p class="text-gray-600 mb-4">Khóa học giúp học viên phát triển kỹ học tập và đạt điểm cao trong kỳ thi.</p>
                     <div class="flex justify-between items-center">
                         <span class="text-primary-700 font-bold">Đang mở lớp</span>
                         <a href="courses.html" class="text-secondary-400 hover:text-secondary-500 font-medium">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></a>
@@ -144,14 +144,14 @@
             <!-- Course 3 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
                 <div class="h-48 overflow-hidden">
-                    <img src="./../assets/class.jpg" alt="Toán học nâng cao" class="w-full h-full object-cover">
+                    <img src="./../assets/class.jpg" alt="Bổ trợ và nâng cao" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6">
                     <div class="flex justify-between items-center mb-3">
                         <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Lớp 6-9</span>
                         <span class="text-secondary-400"><i class="fas fa-star mr-1"></i>4.9/5</span>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-700 mb-2">Toán học nâng cao</h3>
+                    <h3 class="text-xl font-bold text-primary-700 mb-2">Bổ trợ và nâng cao</h3>
                     <p class="text-gray-600 mb-4">Chương trình bồi dưỡng học sinh giỏi, phát triển tư duy logic và kỹ năng giải quyết vấn đề phức tạp.</p>
                     <div class="flex justify-between items-center">
                         <span class="text-primary-700 font-bold">Đang mở lớp</span>
