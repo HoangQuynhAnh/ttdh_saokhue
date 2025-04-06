@@ -3,6 +3,14 @@
       <!-- Teacher Search and Filter -->
       <div class="py-12 bg-white">
         <div class="container mx-auto px-4">
+                    <!-- Page Header -->
+          <div class="bg-primary-700 text-white py-12">
+          <div class="container mx-auto px-4">
+              <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center">Thông Tin Giáo Viên</h1>
+              <p class="text-lg max-w-3xl mx-auto text-center">Đội ngũ giáo viên nước ngoài chất lượng cao của Trung tâm Giáo dục Sao Khuế</p>
+          </div>
+          </div>
+          <!--
             <div class="bg-gray-100 p-6 rounded-lg mb-10">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
@@ -36,208 +44,133 @@
                     </div>
                 </div>
             </div>
+            -->
+            <!-- Teacher Information Section -->
+          <div class="py-12 bg-white">
+          <div class="container mx-auto px-4">
+              <div class="mb-8">
+                  <h2 class="text-2xl font-bold text-primary-700 mb-6">Danh Sách Giáo Viên Nước Ngoài</h2>
 
-            <!-- Teachers Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Teacher 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-primary-700 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">10+ năm KN</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Nguyễn Thị Minh</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Toán học</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(4.5)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Thạc sĩ Toán học, 10 năm kinh nghiệm giảng dạy tại các trường THPT chuyên. Chuyên gia luyện thi học sinh giỏi và đại học.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teacher 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">Tiến sĩ</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Trần Văn Hùng</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Vật lý</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(5.0)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Tiến sĩ Vật lý, giảng viên đại học và có nhiều năm kinh nghiệm luyện thi HSG. Tác giả của nhiều sách giáo khoa và tài liệu tham khảo.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teacher 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-green-600 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">IELTS 8.5</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Lê Thị Hương</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Tiếng Anh</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(4.7)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Thạc sĩ ngôn ngữ Anh, chứng chỉ IELTS 8.5, 8 năm kinh nghiệm giảng dạy. Chuyên gia về phương pháp học tiếng Anh hiệu quả.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teacher 4 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-primary-700 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">12+ năm KN</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Phạm Minh Tuấn</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Hóa học</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(4.9)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Thạc sĩ Hóa học, 12 năm kinh nghiệm giảng dạy và biên soạn nhiều tài liệu. Chuyên gia về phương pháp giải nhanh bài tập hóa học.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teacher 5 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-yellow-600 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">Giáo viên xuất sắc</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Trần Thị Hoa</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Ngữ văn</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(4.8)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Thạc sĩ Văn học Việt Nam, 15 năm kinh nghiệm giảng dạy. Chuyên gia phân tích tác phẩm văn học và kỹ năng làm văn.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teacher 6 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div class="relative">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Teacher" class="w-full h-64 object-cover">
-                        <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 m-2 rounded-full text-sm font-medium">Tiến sĩ</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Nguyễn Văn Đức</h3>
-                        <p class="text-primary-600 font-medium mb-3">Giáo viên Toán học</p>
-                        <div class="flex items-center mb-3">
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-gray-600 ml-2">(4.6)</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Tiến sĩ Toán học ứng dụng, 9 năm kinh nghiệm giảng dạy. Chuyên gia về phương pháp giải toán nhanh và hiệu quả.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-gray-600 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
-                            </div>
-                            <a href="#" class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded-lg">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+                  <!-- Teacher Cards Grid -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <!-- Teacher 1 -->
+                      <div class="teacher-card bg-white rounded-lg shadow-md overflow-hidden h-full">
+                          <div class="relative overflow-hidden" style="height:30rem">
+                              <img src="../assets/teacher1.jpg" alt="WAQAS ALI" class="w-full h-full object-cover teacher-image">
+                              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                  <h3 class="text-xl font-bold text-white">WAQAS ALI</h3>
+                                  <p class="text-secondary-300">Pakistan</p>
+                              </div>
+                          </div>
+                          <div class="p-5">
+                              <div class="flex justify-between mb-4">
+                                  <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Nam</span>
+                              </div>
+                              <div class="mb-3">
+                                  <p class="text-gray-600 font-medium">Ngày sinh:</p>
+                                  <p class="text-gray-800">24/03/1992</p>
+                              </div>
+                              <div class="mb-4">
+                                  <span class="bg-primary-100 text-primary-700 font-medium px-2.5 py-0.5 rounded-full">Bằng cấp chứng chỉ</span>
+                                  <ul class="list-disc pl-5 text-gray-700 mt-1">
+                                      <li>Bằng Đại học</li>
+                                      <li>Chứng chỉ tiếng anh EF SET</li>
+                                      <li>Chứng chỉ sư phạm Tesol</li>
+                                  </ul>
+                              </div>
+                              <div class="flex items-center text-gray-500 mt-auto">
+                                  <i class="fas fa-chalkboard-teacher mr-2"></i>
+                                  <span>Giáo viên tiếng Anh</span>
+                              </div>
+                          </div>
+                      </div>
 
-    <!-- Join Our Team -->
-    <div class="bg-primary-50 py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Tham gia đội ngũ giảng viên của chúng tôi</h2>
-                <p class="text-gray-600 mb-8 text-lg">Bạn là một giáo viên tài năng và đam mê giảng dạy? Chúng tôi luôn tìm kiếm những người có khả năng truyền cảm hứng và kiến thức cho học viên.</p>
-                <a href="contact.html" class="inline-block bg-primary-700 hover:bg-primary-700 text-white font-bold py-3 px-8 rounded-lg">Ứng tuyển ngay</a>
-            </div>
-        </div>
-    </div>
+                      <!-- Teacher 2 -->
+                      <div class="teacher-card bg-white rounded-lg shadow-md overflow-hidden h-full">
+                          <div class="relative overflow-hidden" style="height:30rem">
+                              <img src="../assets/teacher2.jpg" alt="ANTHONY MICHAEL JACKSON" class="w-full h-full object-cover teacher-image">
+                              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                  <h3 class="text-xl font-bold text-white">ANTHONY MICHAEL JACKSON</h3>
+                                  <p class="text-secondary-300">Mỹ</p>
+                              </div>
+                          </div>
+                          <div class="p-5">
+                              <div class="flex justify-between mb-4">
+                                  <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Nam</span>
+                              </div>
+                              <div class="mb-3">
+                                  <p class="text-gray-600 font-medium">Ngày sinh:</p>
+                                  <p class="text-gray-800">01/03/1991</p>
+                              </div>
+                              <div class="mb-4">
+                                  <span class="bg-primary-100 text-primary-700 font-medium px-2.5 py-0.5 rounded-full">Bằng cấp chứng chỉ</span>
+                                  <ul class="list-disc pl-5 text-gray-700 mt-1">
+                                      <li>Bằng Đại học</li>
+                                      <li>Chứng chỉ tiếng anh EF SET</li>
+                                      <li>Chứng chỉ sư phạm Tesol</li>
+                                  </ul>
+                              </div>
+                              <div class="flex items-center text-gray-500 mt-auto">
+                                  <i class="fas fa-chalkboard-teacher mr-2"></i>
+                                  <span>Giáo viên tiếng Anh</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Teacher 3 -->
+                      <div class="teacher-card bg-white rounded-lg shadow-md overflow-hidden h-full">
+                          <div class="relative overflow-hidden" style="height:30rem">
+                              <img src="../assets/teacher3.jpg" alt="IQBAL MAIRA" class="w-full h-full object-cover teacher-image">
+                              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                  <h3 class="text-xl font-bold text-white">IQBAL MAIRA</h3>
+                                  <p class="text-secondary-300">Pakistan</p>
+                              </div>
+                          </div>
+                          <div class="p-5">
+                              <div class="flex justify-between mb-4">
+                                  <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Nữ</span>
+                              </div>
+                              <div class="mb-3">
+                                  <p class="text-gray-600 font-medium">Ngày sinh:</p>
+                                  <p class="text-gray-800">15/12/1994</p>
+                              </div>
+                              <div class="mb-4">
+                                  <span class="bg-primary-100 text-primary-700 font-medium px-2.5 py-0.5 rounded-full">Bằng cấp chứng chỉ</span>
+                                  <ul class="list-disc pl-5 text-gray-700 mt-1">
+                                      <li>Bằng Đại học</li>
+                                      <li>Chứng chỉ tiếng anh EF SET</li>
+                                      <li>Chứng chỉ sư phạm Tesol</li>
+                                  </ul>
+                              </div>
+                              <div class="flex items-center text-gray-500 mt-auto">
+                                  <i class="fas fa-chalkboard-teacher mr-2"></i>
+                                  <span>Giáo viên tiếng Anh</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Teacher Qualifications -->
+              <div class="mt-12">
+                  <h2 class="text-2xl font-bold text-primary-700 mb-6">Chất Lượng Giảng Dạy</h2>
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                      <p class="text-gray-700 mb-4">Tại Trung tâm Giáo dục Sao Khuế, chúng tôi tự hào về đội ngũ giáo viên nước ngoài chất lượng cao. Tất cả giáo viên của chúng tôi đều:</p>
+                      <ul class="list-disc pl-8 space-y-2 text-gray-700 mb-4">
+                          <li>Có bằng đại học từ các trường danh tiếng</li>
+                          <li>Sở hữu chứng chỉ giảng dạy tiếng Anh quốc tế (TESOL/TEFL/CELTA)</li>
+                          <li>Có kinh nghiệm giảng dạy với học sinh Việt Nam</li>
+                          <li>Thường xuyên được đào tạo và cập nhật phương pháp giảng dạy hiện đại</li>
+                          <li>Có khả năng giao tiếp tốt và thân thiện với học viên</li>
+                      </ul>
+                      <p class="text-gray-700">Chúng tôi cam kết mang đến cho học viên trải nghiệm học tập với 100% giáo viên nước ngoài chất lượng, giúp học viên phát triển kỹ năng tiếng Anh toàn diện và tự tin giao tiếp trong môi trường quốc tế.</p>
+                  </div>
+              </div>
+
+          </div>
+          </div>
+      </div>
+      </div>
+
   </div>
 </template>

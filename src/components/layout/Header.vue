@@ -5,12 +5,12 @@
             <div class="flex flex-col md:flex-row items-center mb-2 md:mb-0">
                 <div class="flex items-center">
                     <i class="fas fa-phone-alt text-secondary-400 mr-2"></i>
-                    <span class="text-sm">Hotline: (+84) 123 456 789</span>
+                    <span class="text-sm">Hotline: (+84) 819988255</span>
                 </div>
                 <div class="hidden md:block mx-2 text-gray-400">|</div>
                 <div class="flex items-center mt-1 md:mt-0">
                     <i class="fas fa-map-marker-alt text-secondary-400 mr-2"></i>
-                    <span class="text-sm">Địa chỉ: Thị xã Chũ, Lục Ngạn, Bắc Giang</span>
+                    <span class="text-sm">Dịa chỉ: 385 TDP Trung Nghĩa, Thị xã Chũ, Lục Ngạn, Bắc Giang</span>
                 </div>
             </div>
             <div class="flex space-x-4">
@@ -23,4 +23,3 @@
     </div>
 </div>
 </template>
-<script></script>

@@ -90,7 +90,7 @@
                             </div>
                         </td>
                     </tr>
-                    
+
                     <!-- Wednesday -->
                     <tr>
                         <td class="text-center font-bold bg-gray-100" rowspan="2">BẢY</td>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Schedule Card 2 -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden schedule-card">
                     <div class="bg-primary-700 text-white p-4">
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Schedule Card 3 -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden schedule-card">
                     <div class="bg-primary-700 text-white p-4">
@@ -291,7 +291,7 @@
                 <li>Mang đầy đủ sách vở, dụng cụ học tập theo yêu cầu của giáo viên.</li>
                 <li>Nghỉ học cần báo trước với giáo viên hoặc văn phòng trung tâm.</li>
                 <li>Lịch học có thể thay đổi, trung tâm sẽ thông báo trước ít nhất 3 ngày.</li>
-                <li>Mọi thắc mắc về lịch học vui lòng liên hệ hotline: (+84) 123 456 789.</li>
+                <li>Mọi thắc mắc về lịch học vui lòng liên hệ hotline: (+84) 819988255.</li>
             </ul>
         </div>
     </div>

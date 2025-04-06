@@ -15,7 +15,6 @@
                 <!-- Contact Information -->
                 <div>
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Thông tin liên hệ</h2>
-                    
                     <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-8">
                         <div class="flex items-start mb-6">
                             <div class="bg-primary-100 p-3 rounded-full mr-4">
@@ -23,21 +22,20 @@
                             </div>
                             <div>
                                 <h3 class="text-lg font-bold text-gray-800 mb-1">Địa chỉ</h3>
-                                <p class="text-gray-600">Thị xã Chũ, Lục Ngạn, Bắc Giang</p>
+                                <p class="text-gray-600">385 TDP Trung Nghĩa, Thị xã Chũ, Lục Ngạn, Bắc Giang</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start mb-6">
                             <div class="bg-primary-100 p-3 rounded-full mr-4">
                                 <i class="fas fa-phone-alt text-primary-600 text-xl"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-bold text-gray-800 mb-1">Điện thoại</h3>
-                                <p class="text-gray-600">Hotline: (+84) 123 456 789</p>
-                                <p class="text-gray-600">Tư vấn: (+84) 987 654 321</p>
+                                <p class="text-gray-600">Hotline: (+84) 819988255</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start mb-6">
                             <div class="bg-primary-100 p-3 rounded-full mr-4">
                                 <i class="fas fa-envelope text-primary-600 text-xl"></i>
@@ -47,19 +45,9 @@
                                 <p class="text-gray-600">ttdhsaokhue@gmail.com</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-clock text-primary-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800 mb-1">Giờ làm việc</h3>
-                                <p class="text-gray-600">Thứ 2 - Thứ 6: 8:00 - 20:00</p>
-                                <p class="text-gray-600">Thứ 7 - Chủ nhật: 8:00 - 17:00</p>
-                            </div>
-                        </div>
+
                     </div>
-                    
+
                     <!-- Social Media -->
                     <div class="mb-8">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Kết nối với chúng tôi</h3>
@@ -78,7 +66,6 @@
                             </a>
                         </div>
                     </div>
-                    
                     <!-- Map -->
                     <div>
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Bản đồ</h3>
@@ -87,8 +74,6 @@
                         </div>
                     </div>
                 </div>
-                
-              sss
             </div>
         </div>
     </div>
@@ -100,7 +85,7 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Câu hỏi thường gặp</h2>
                 <p class="text-gray-600 max-w-3xl mx-auto">Dưới đây là một số câu hỏi thường gặp từ học viên và phụ huynh. Nếu bạn không tìm thấy câu trả lời cho thắc mắc của mình, vui lòng liên hệ với chúng tôi.</p>
             </div>
-            
+
             <div class="max-w-4xl mx-auto">
                 <!-- FAQ Item 1 -->
                 <div class="mb-4">
@@ -112,7 +97,7 @@
                         <p class="text-gray-600">Bạn có thể đăng ký khóa học thông qua nhiều cách: trực tiếp tại trung tâm, qua điện thoại hotline, qua email hoặc điền form đăng ký trên website của chúng tôi. Sau khi đăng ký, nhân viên tư vấn sẽ liên hệ với bạn trong vòng 24 giờ để xác nhận và hướng dẫn các bước tiếp theo.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 2 -->
                 <div class="mb-4">
                     <button class="faq-toggle flex justify-between items-center w-full bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -123,7 +108,7 @@
                         <p class="text-gray-600">Học phí có thể được thanh toán bằng tiền mặt trực tiếp tại trung tâm hoặc chuyển khoản ngân hàng. Chúng tôi cũng hỗ trợ thanh toán theo đợt đối với một số khóa học dài hạn. Sau khi thanh toán, bạn sẽ nhận được biên lai và thông tin chi tiết về lịch học.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 3 -->
                 <div class="mb-4">
                     <button class="faq-toggle flex justify-between items-center w-full bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -134,7 +119,7 @@
                         <p class="text-gray-600">Có, chúng tôi có chương trình học thử miễn phí cho hầu hết các khóa học. Bạn có thể đăng ký học thử 1-2 buổi để trải nghiệm phương pháp giảng dạy và đánh giá mức độ phù hợp trước khi quyết định đăng ký khóa học chính thức.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 4 -->
                 <div class="mb-4">
                     <button class="faq-toggle flex justify-between items-center w-full bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -145,7 +130,7 @@
                         <p class="text-gray-600">Nếu học viên vắng mặt có lý do chính đáng và thông báo trước ít nhất 24 giờ, chúng tôi sẽ sắp xếp lịch học bù hoặc cung cấp tài liệu và video bài giảng để học viên có thể tự học. Tuy nhiên, số buổi học bù sẽ được giới hạn tùy theo từng khóa học cụ thể.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 5 -->
                 <div class="mb-4">
                     <button class="faq-toggle flex justify-between items-center w-full bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -156,7 +141,7 @@
                         <p class="text-gray-600">Chúng tôi có chính sách hoàn tiền trong vòng 7 ngày đầu tiên của khóa học nếu học viên không hài lòng với chất lượng giảng dạy. Tuy nhiên, khoản hoàn tiền sẽ được trừ đi các buổi học đã tham gia và phí hành chính. Chi tiết về chính sách hoàn tiền sẽ được ghi rõ trong hợp đồng đăng ký học.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 6 -->
                 <div class="mb-4">
                     <button class="faq-toggle flex justify-between items-center w-full bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trung Tâm Giáo Dục Sao Khuế</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    50: '#f0f5ff',
+                    100: '#e0ebff',
+                    200: '#c0d6ff',
+                    300: '#80b0ff',
+                    400: '#4080ff',
+                    500: '#0055ff',
+                    600: '#0044cc',
+                    700: '#003399',
+                    800: '#002266',
+                    900: '#001133',
+                },
+                secondary: {
+                    50: '#fff0f0',
+                    100: '#ffe0e0',
+                    200: '#ffc0c0',
+                    300: '#ff8080',
+                    400: '#ff4040',
+                    500: '#ff1a1a',
+                    600: '#ff0000',
+                    700: '#cc0000',
+                    800: '#990000',
+                    900: '#660000',
+                }
+            }
+        }
+    }
+}
+</script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.hero-pattern {
+    background-color: #f8f9fa;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003399' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.banner-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Top Bar -->
+<div class="bg-primary-700 text-white py-2">
+<div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row items-center mb-2 md:mb-0">
+            <div class="flex items-center">
+                <i class="fas fa-phone-alt text-secondary-400 mr-2"></i>
+                <span class="text-sm">Hotline: 0819988255</span>
+            </div>
+            <div class="hidden md:block mx-2 text-gray-400">|</div>
+            <div class="flex items-center mt-1 md:mt-0">
+                <i class="fas fa-map-marker-alt text-secondary-400 mr-2"></i>
+                <span class="text-sm">Địa chỉ: Thị xã Chũ, Lục Ngạn, Bắc Giang</span>
+            </div>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-gray-200 hover:text-secondary-300"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-200 hover:text-secondary-300"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-200 hover:text-secondary-300"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-gray-200 hover:text-secondary-300"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20tr%C3%AAn%20trang%20web-uCzuM6IzkpkIy1iFaRb83p8q96EgVw.png" alt="Sao Khuế Logo" class="h-14 mr-3">
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-primary-700 font-medium border-b-2 border-secondary-400">Trang chủ</a>
+            <a href="courses.html" class="text-gray-700 hover:text-primary-700 font-medium">Khóa học</a>
+            <a href="teachers.html" class="text-gray-700 hover:text-primary-700 font-medium">Giáo viên</a>
+            <a href="schedule.html" class="text-gray-700 hover:text-primary-700 font-medium">Lịch học</a>
+            <a href="news.html" class="text-gray-700 hover:text-primary-700 font-medium">Tin tức</a>
+            <a href="testimonials.html" class="text-gray-700 hover:text-primary-700 font-medium">Cảm nhận</a>
+            <a href="contact.html" class="text-gray-700 hover:text-primary-700 font-medium">Liên hệ</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 text-primary-700 font-medium">Trang chủ</a>
+        <a href="courses.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Khóa học</a>
+        <a href="teachers.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Giáo viên</a>
+        <a href="schedule.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Lịch học</a>
+        <a href="news.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Tin tức</a>
+        <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Cảm nhận</a>
+        <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary-700 font-medium">Liên hệ</a>
+    </div>
+</div>
+</nav>
+
+<!-- Banner Section -->
+<div class="relative overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center">
+        <!-- Logo Side -->
+        <div class="w-full md:w-1/3 bg-white p-8 flex justify-center items-center">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20tr%C3%AAn%20trang%20web-uCzuM6IzkpkIy1iFaRb83p8q96EgVw.png" alt="Sao Khuế Logo" class="h-32">
+        </div>
+
+        <!-- Text Side with Diagonal Background -->
+        <div class="w-full md:w-2/3 bg-secondary-600 text-white p-8 banner-diagonal">
+            <div class="text-center md:text-left">
+                <h2 class="text-xl font-semibold mb-2">SỞ GIÁO DỤC VÀ ĐÀO TẠO BẮC GIANG</h2>
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">TRUNG TÂM GIÁO DỤC SAO KHUẾ</h1>
+                <h3 class="text-xl md:text-2xl font-semibold mb-6">HỌC 100% VỚI GIÁO VIÊN CHẤT LƯỢNG</h3>
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-lg"><i class="fas fa-map-marker-alt mr-2"></i> Thị xã Chũ, Lục Ngạn, Bắc Giang</p>
+                    <p class="text-lg"><i class="fas fa-phone-alt mr-2"></i> Hotline: 0819988255</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero-pattern py-16 md:py-24">
+<div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary-700 mb-4">Trung Tâm Giáo Dục Sao Khuế</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-secondary-600 mb-6">Nơi Ươm Mầm Tri Thức, Dẫn Lối Thành Công</h2>
+            <p class="text-lg text-gray-600 mb-8 italic">"Giáo dục không phải là đổ đầy một cái bình, mà là thắp sáng một ngọn lửa."<br>— William Butler Yeats</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="courses.html" class="bg-primary-700 hover:bg-primary-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">Khám phá khóa học</a>
+                <a href="contact.html" class="bg-secondary-600 hover:bg-secondary-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">Liên hệ tư vấn</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Học sinh Sao Khuế" class="rounded-lg shadow-xl max-w-full h-auto" style="max-height: 400px;">
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- About Section -->
+<div class="py-16 bg-white">
+<div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-700 mb-2">Về Trung Tâm Sao Khuế</h2>
+        <p class="text-xl text-secondary-600 font-semibold">Sao Khuế lấy chất lượng làm nên thương hiệu!</p>
+        <div class="w-24 h-1 bg-secondary-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <p class="text-gray-700 mb-6 leading-relaxed">Giữa lòng thị xã Chũ – Lục Ngạn – Bắc Giang, nơi nhộn nhịp của tuyến quốc lộ 31, Trung tâm Dạy học Sao Khuê đã và đang trở thành điểm sáng trong lĩnh vực giáo dục và đào tạo chất lượng cao. Là một đơn vị trực thuộc Công ty TNHH Sản xuất và Thương mại Đồ gỗ Đức Hiếu – Mã số doanh nghiệp 2400934103.</p>
+
+            <p class="text-gray-700 mb-6 leading-relaxed">Trung tâm tự hào mang đến môi trường học tập hiện đại, chuyên nghiệp, đầy cảm hứng cho hàng nghìn học sinh từ tiểu học đến bậc đại học.</p>
+
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-primary-700 flex items-center justify-center mr-4">
+                    <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-gray-500">Email</p>
+                    <p class="font-medium text-primary-700">ttdhsaokhue@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-primary-700 flex items-center justify-center mr-4">
+                    <i class="fas fa-phone-alt text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-gray-500">Hotline</p>
+                    <p class="font-medium text-primary-700">0819988255</p>
+                </div>
+            </div>
+
+            <div class="flex items-center mt-6">
+                <div class="w-12 h-12 rounded-full bg-primary-700 flex items-center justify-center mr-4">
+                    <i class="fas fa-globe text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-gray-500">Website</p>
+                    <p class="font-medium text-primary-700">www.ttgdsaokhue.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-primary-700 mb-6 flex items-center">
+                <i class="fas fa-star text-secondary-600 mr-3"></i>Tầm nhìn & Sứ mệnh
+            </h3>
+
+            <div class="mb-6">
+                <h4 class="text-lg font-semibold text-primary-700 mb-2">🎓 Khám Phá Tiềm Năng Tương Lai – Sao Khuê Dẫn Lối Thành Công!</h4>
+                <p class="text-gray-700">Với tầm nhìn đột phá và sứ mệnh "Khơi dậy khả năng tiềm ẩn của thế hệ tương lai", Trung tâm giáo dục Sao Khuê không chỉ cung cấp một nền tảng kiến thức vững chắc mà còn mở ra cánh cửa thành công cho học sinh ở các cấp độ. Từ kỹ năng sống cho học sinh tiểu học, bổ trợ kiến thức và nâng cao cho học sinh THCS, luyện thi chuyển cấp cho học sinh THPT và đại học, chúng tôi sẵn sàng đồng hành cùng các em trong mỗi bước đường học tập.</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="text-lg font-semibold text-primary-700 mb-2">👩‍🏫 Đội ngũ giáo viên xuất sắc – Cố vấn quốc tế giàu kinh nghiệm</h4>
+                <p class="text-gray-700">Sao Khuê quy tụ đội ngũ giáo viên giỏi cấp huyện, cấp tỉnh, nhiều năm kinh nghiệm trong giảng dạy và bồi dưỡng học sinh đạt thành tích cao. Đặc biệt, Trung tâm còn hợp tác với giáo viên người nước ngoài có trình độ sư phạm quốc tế, đáp ứng nhu cầu học tập chất lượng cao, nâng cao khả năng hội nhập và phát triển tư duy toàn cầu cho học sinh.</p>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold text-primary-700 mb-2">🏫 Cơ sở vật chất hiện đại – Môi trường học tập lý tưởng</h4>
+                <p class="text-gray-700 mb-4">Tại Sao Khuê, mọi điều kiện học tập đều được chú trọng đầu tư:</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Phòng học rộng rãi, trang bị đầy đủ thiết bị dạy học</li>
+                    <li>Phòng chờ giáo viên tiện nghi</li>
+                    <li>Khu để xe, khu vệ sinh riêng biệt, sạch sẽ</li>
+                    <li>Văn phòng hành chính hoạt động hiệu quả, chuyên nghiệp</li>
+                    <li>Hệ thống phòng cháy chữa cháy, an ninh trật tự, và pháp lý luôn được đảm bảo nghiêm ngặt theo đúng quy định của pháp luật.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Courses Section -->
+<div class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-700 mb-2">Các Khóa Học Nổi Bật</h2>
+        <p class="text-xl text-secondary-600 font-semibold">Chọn là sáng, học là giỏi!</p>
+        <div class="w-24 h-1 bg-secondary-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Course 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80" alt="Luyện thi THPT Quốc gia" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Lớp 12</span>
+                    <span class="text-secondary-600"><i class="fas fa-star mr-1"></i>4.9/5</span>
+                </div>
+                <h3 class="text-xl font-bold text-primary-700 mb-2">Luyện thi THPT Quốc gia</h3>
+                <p class="text-gray-600 mb-4">Chương trình ôn tập toàn diện, bám sát cấu trúc đề thi, giúp học sinh đạt điểm cao trong kỳ thi THPT Quốc gia.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-primary-700 font-bold">Đang mở lớp</span>
+                    <a href="courses.html" class="text-secondary-600 hover:text-secondary-700 font-medium">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80" alt="Tiếng Anh giao tiếp" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Mọi lứa tuổi</span>
+                    <span class="text-secondary-600"><i class="fas fa-star mr-1"></i>4.8/5</span>
+                </div>
+                <h3 class="text-xl font-bold text-primary-700 mb-2">Tiếng Anh giao tiếp</h3>
+                <p class="text-gray-600 mb-4">Khóa học giúp học viên phát triển kỹ năng giao tiếp tiếng Anh tự tin với người bản xứ trong mọi tình huống.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-primary-700 font-bold">Đang mở lớp</span>
+                    <a href="courses.html" class="text-secondary-600 hover:text-secondary-700 font-medium">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80" alt="Toán học nâng cao" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Lớp 6-9</span>
+                    <span class="text-secondary-600"><i class="fas fa-star mr-1"></i>4.9/5</span>
+                </div>
+                <h3 class="text-xl font-bold text-primary-700 mb-2">Toán học nâng cao</h3>
+                <p class="text-gray-600 mb-4">Chương trình bồi dưỡng học sinh giỏi, phát triển tư duy logic và kỹ năng giải quyết vấn đề phức tạp.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-primary-700 font-bold">Đang mở lớp</span>
+                    <a href="courses.html" class="text-secondary-600 hover:text-secondary-700 font-medium">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <a href="courses.html" class="inline-block bg-primary-700 hover:bg-primary-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Xem tất cả khóa học</a>
+    </div>
+</div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="py-16 bg-white">
+<div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-700 mb-2">Tại Sao Chọn Sao Khuế?</h2>
+        <p class="text-xl text-secondary-600 font-semibold">Tâm huyết mở đường - Chất lượng dẫn lối</p>
+        <div class="w-24 h-1 bg-secondary-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+            <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-user-graduate text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary-700 mb-3">Giáo viên giỏi</h3>
+            <p class="text-gray-600">Đội ngũ giáo viên giỏi cấp huyện, cấp tỉnh với nhiều năm kinh nghiệm giảng dạy.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+            <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-book-open text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary-700 mb-3">Chương trình đa dạng</h3>
+            <p class="text-gray-600">Đa dạng chương trình học từ tiểu học đến đại học, đáp ứng mọi nhu cầu học tập với các khóa STEAM đột phá.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+            <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-school text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary-700 mb-3">Cơ sở vật chất</h3>
+            <p class="text-gray-600">Phòng học hiện đại, đầy đủ trang thiết bị, tạo môi trường học tập lý tưởng.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+            <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-chart-line text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary-700 mb-3">Kết quả đảm bảo</h3>
+            <p class="text-gray-600">Cam kết chất lượng đầu ra, học sinh đạt kết quả cao trong các kỳ thi.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Testimonial Section -->
+<div class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-700 mb-2">Cảm Nhận Của Học Viên</h2>
+        <p class="text-xl text-secondary-600 font-semibold">Những chia sẻ từ học viên của chúng tôi</p>
+        <div class="w-24 h-1 bg-secondary-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 relative transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute top-6 right-6 text-secondary-600 opacity-10">
+                <i class="fas fa-quote-right text-5xl"></i>
+            </div>
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Nguyễn Thị Hương" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-primary-700">Nguyễn Thị Hương</h3>
+                    <p class="text-secondary-600">Học viên lớp 12</p>
+                    <div class="flex text-secondary-600 mt-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">"Tôi đã học tại trung tâm Sao Khuế được 6 tháng và đã đạt được kết quả ngoài mong đợi. Giáo viên rất tận tâm, phương pháp giảng dạy dễ hiểu và hiệu quả. Môi trường học tập thân thiện và chuyên nghiệp."</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 relative transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute top-6 right-6 text-secondary-600 opacity-10">
+                <i class="fas fa-quote-right text-5xl"></i>
+            </div>
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Trần Minh Đức" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-primary-700">Trần Minh Đức</h3>
+                    <p class="text-secondary-600">Học viên lớp 9</p>
+                    <div class="flex text-secondary-600 mt-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">"Nhờ khóa học Toán nâng cao tại trung tâm, tôi đã đạt giải Nhì trong kỳ thi học sinh giỏi cấp tỉnh. Cô Minh đã giúp tôi hiểu sâu về các khái niệm toán học và phương pháp giải nhanh. Rất biết ơn trung tâm!"</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 relative transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute top-6 right-6 text-secondary-600 opacity-10">
+                <i class="fas fa-quote-right text-5xl"></i>
+            </div>
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Lê Thị Mai Anh" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-primary-700">Lê Thị Mai Anh</h3>
+                    <p class="text-secondary-600">Phụ huynh học sinh</p>
+                    <div class="flex text-secondary-600 mt-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">"Con tôi đã tham gia khóa luyện thi đại học tại trung tâm và đã đạt được kết quả ngoài mong đợi. Các thầy cô rất nhiệt tình, tài liệu học tập phong phú và cập nhật. Đặc biệt, phương pháp ôn thi hiệu quả đã giúp con tôi tự tin hơn rất nhiều."</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <a href="testimonials.html" class="inline-block bg-secondary-600 hover:bg-secondary-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Xem thêm cảm nhận</a>
+    </div>
+</div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-16 bg-primary-700 text-white">
+<div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Sao Khuế – Chọn là sáng, học là giỏi!</h2>
+    <p class="text-lg mb-8 max-w-3xl mx-auto">Hãy đến với chúng tôi để con bạn được học tập trong môi trường giáo dục uy tín, bài bản, được dìu dắt bởi những người thầy tâm huyết và tài năng!</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="courses.html" class="bg-white text-primary-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Xem khóa học</a>
+        <a href="contact.html" class="bg-transparent hover:bg-primary-600 border-2 border-white text-white font-bold py-3 px-8 rounded-lg transition duration-300">Liên hệ tư vấn</a>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-12 pb-8">
+<div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Về chúng tôi</h3>
+            <div class="flex items-center mb-4">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20tr%C3%AAn%20trang%20web-uCzuM6IzkpkIy1iFaRb83p8q96EgVw.png" alt="Sao Khuế Logo" class="h-10 mr-2">
+            </div>
+            <p class="text-gray-400 mb-4">Trung tâm đào tạo hàng đầu với sứ mệnh mang đến kiến thức và kỹ năng cho thế hệ trẻ Việt Nam.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Liên kết nhanh</h3>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="text-gray-400 hover:text-white">Trang chủ</a></li>
+                <li><a href="courses.html" class="text-gray-400 hover:text-white">Khóa học</a></li>
+                <li><a href="teachers.html" class="text-gray-400 hover:text-white">Giáo viên</a></li>
+                <li><a href="schedule.html" class="text-gray-400 hover:text-white">Lịch học</a></li>
+                <li><a href="news.html" class="text-gray-400 hover:text-white">Tin tức</a></li>
+                <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Cảm nhận</a></li>
+                <li><a href="contact.html" class="text-gray-400 hover:text-white">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- Courses -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Khóa học</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-400 hover:text-white">Toán học nâng cao</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Tiếng Anh giao tiếp</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Vật lý cơ bản và nâng cao</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Hóa học</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Ngữ văn</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Luyện thi đại học</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Liên hệ</h3>
+            <ul class="space-y-2">
+                <li class="flex items-start">
+                    <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary-600"></i>
+                    <span class="text-gray-400">Thị xã Chũ, Lục Ngạn, Bắc Giang</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-phone-alt mt-1 mr-3 text-secondary-600"></i>
+                    <span class="text-gray-400">0819988255</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-envelope mt-1 mr-3 text-secondary-600"></i>
+                    <span class="text-gray-400">ttdhsaokhue@gmail.com</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-globe mt-1 mr-3 text-secondary-600"></i>
+                    <span class="text-gray-400">www.ttgdsaokhue.com</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-clock mt-1 mr-3 text-secondary-600"></i>
+                    <span class="text-gray-400">Thứ 2 - Thứ 6: 8:00 - 20:00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="border-gray-700 mb-6">
+
+    <div class="text-center text-gray-400">
+        <p>&copy; 2023 Trung Tâm Giáo Dục Sao Khuế. Tất cả các quyền được bảo lưu.</p>
+        <p class="mt-2 text-secondary-600 font-medium">Tâm huyết mở đường - Chất lượng dẫn lối</p>
+    </div>
+</div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-primary-800 focus:outline-none hidden">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript -->
+<script>
+// Mobile Menu Toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('hidden');
+    } else {
+        backToTopButton.classList.add('hidden');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
+</body>
+</html>
