@@ -28,12 +28,13 @@
         
         <!-- Mobile Menu -->
         <div v-show="mobileMenuOpen" class="md:hidden pb-4">
-          <a href="trang-chu" class="block py-2 text-primary-700 font-medium" @click="mobileMenuOpen = false">Trang chủ</a>
-          <a href="/giao-vien" class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="mobileMenuOpen = false">Giáo viên</a>
-          <a href="/hoc-sinh" class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="mobileMenuOpen = false">Học sinh</a>
-          <a href="/lich-hoc" class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="mobileMenuOpen = false">Lịch học</a>
-          <a href="/tuyen-sinh" class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="mobileMenuOpen = false">Tuyển sinh</a>
-          <a href="/lien-he" class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="mobileMenuOpen = false">Liên hệ</a>
+          <div class="block py-2 text-primary-700 font-medium" @click="navigateUrl()">Trang chủ</div>
+          <div class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="navigateUrl('giao-vien')">Giáo viên</div>
+          <div class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="navigateUrl('hoc-sinh')">Học sinh</div>
+          <div  class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="navigateUrl('lich-hoc')">Lịch học</div>
+          <div  class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="navigateUrl('tuyen-sinh')">Tuyển sinh</div>
+          <div  class="block py-2 text-gray-700 hover:text-primary-700 font-medium" @click="navigateUrl('lien-he')"
+          >Liên hệ</div>
         </div>
       </div>
     </nav>
@@ -47,8 +48,11 @@
       }
     },
     methods: {
+      navigateUrl(url){
+         this.$router.push(url);
+         this.toggleMobileMenu()
+      },
       toggleMobileMenu() {
-        debugger
         this.mobileMenuOpen = !this.mobileMenuOpen;
       }
     }
