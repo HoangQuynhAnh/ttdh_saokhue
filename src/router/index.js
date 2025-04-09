@@ -6,6 +6,7 @@ import News from './../views/News.vue'
 import Schedule from './../views/Schedule.vue'
 import Students from './../views/Students.vue'
 import Teachers from './../views/Teachers.vue'
+import Maintain from '../views/Maintain.vue'
 
 Vue.use(Router)
 
@@ -14,37 +15,37 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Maintain
     },
     {
       path: '/trang-chu',
       name: 'Home',
-      component: Home
+      component: Maintain
     },
-    {
-      path: '/giao-vien',
-      name: 'giao-vien',
-      component: Teachers
-    },
-    {
-      path: '/hoc-sinh',
-      name: 'hoc-sinh',
-      component: Students
-    },
-    {
-      path: '/lich-hoc',
-      name: 'lich-hoc',
-      component: Schedule
-    },
-    {
-      path: '/tuyen-sinh',
-      name: 'tuyen-sinh',
-      component: News
-    },
-    {
-      path: '/lien-he',
-      name: 'contact',
-      component: Contact
-    }
+    // {
+    //   path: '/giao-vien',
+    //   name: 'giao-vien',
+    //   component: Teachers
+    // },
+    // {
+    //   path: '/hoc-sinh',
+    //   name: 'hoc-sinh',
+    //   component: Students
+    // },
+    // {
+    //   path: '/lich-hoc',
+    //   name: 'lich-hoc',
+    //   component: Schedule
+    // },
+    // {
+    //   path: '/tuyen-sinh',
+    //   name: 'tuyen-sinh',
+    //   component: News
+    // },
+    // {
+    //   path: '/lien-he',
+    //   name: 'contact',
+    //   component: Contact
+    // }
   ]
 })
